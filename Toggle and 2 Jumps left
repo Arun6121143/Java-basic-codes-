@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scn= new Scanner(System.in);
+        Character ch=scn.next().charAt(0);
+        if(ch>='a'&& ch<='z'){
+            Character ch2=Character.toUpperCase(ch);
+            Character ch1=(char)(ch2-2);
+            if(ch2=='A' || ch2=='B'){
+                System.out.println("Sorry");
+                 }
+            else{
+                System.out.println(ch1);
+            }
+             }
+        else if(ch>='A' && ch<='Z'){
+            Character ch2=Character.toLowerCase(ch);
+            Character ch1=(char)(ch2-2);
+            if(ch2=='a' || ch2=='b'){
+                System.out.println("Sorry");
+                 }
+            else{
+                System.out.println(ch1);
+            }
+            
+        }
+        else{
+            System.out.println("No alphabet");
+        }
+    }
+}
