@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int b=2;
+        System.out.println(b);
+        for(int i=1;i<=1+(n/7);i++){
+            if((b+7)<=n){
+                b=b+7;
+                System.out.println(b);
+            }
+        }
+            
+        
+    }
+}
