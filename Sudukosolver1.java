@@ -24,7 +24,7 @@ public class SudokuSolver1 {
             if(row%3==0 && row!=0){
                 System.out.println("----------");
             }
-            for(int column=0;column<0;column++){
+            for(int column=0;column<9;column++){
                 if(column%3==0 && column!=0){
                     System.out.print("|");
                 }
