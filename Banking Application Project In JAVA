@@ -47,6 +47,15 @@ class BankingApplication{
 
      char option = '\0';
      Scanner scanner = new Scanner(System.in);
+     ArrayList<Integer>pin=new ArrayList<>();
+     pin.add(1234);
+     pin.add(5267);
+     pin.add(3256);
+     
+     System.out.println("Enter the Pin");
+     int pin1=scanner.nextInt();
+     if(pin.contains(pin1)){
+
 
      System.out.println("Welcome " +customerName);
      System.out.println("Your ID is " +customerId);
@@ -110,9 +119,16 @@ class BankingApplication{
      }
      while(option != 'E');
          System.out.println("Thank You for Using our Services.....!!");
+    }
+    else{
+        System.out.println("Entered Pin is Incorrect");
+    }
  }
 }
 
+
+     
+ 
 
      
  
